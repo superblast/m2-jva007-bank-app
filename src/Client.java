@@ -3,5 +3,10 @@
  */
 public class Client {
     String name;
+    String gender;
+
+    public enum clientGender{
+        MALE, FEMALE;
+    }
 
 }
