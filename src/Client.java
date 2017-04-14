@@ -28,9 +28,9 @@ public class Client {
         this.gender = gender;
     }
 
-    void setUpAccount() {
-        account.setBalance(10);
-        account.setId(1);
+    public void addAccount(int id, double balance ) {
+        account.setId(id);
+        account.setBalance(balance);
     }
 
     public Account getAccount() {

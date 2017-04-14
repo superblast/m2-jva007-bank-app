@@ -3,7 +3,7 @@
  */
 public class Account {
     private int id;
-    private int balance;
+    private double balance;
 
     public void setId(int id) {
         this.id = id;
@@ -14,22 +14,22 @@ public class Account {
 
     }
 
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(int balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 
-    public void deposit(int x) {
-        int newBal = balance + x;
+    public void deposit(double x) {
+        double newBal = balance + x;
         this.balance = newBal;
     }
 
-    public void withdraw(int x) {
+    public void withdraw(double x) {
     if (balance >= x) {
-        int newBal = balance - x;
+        double newBal = balance - x;
         this.balance = newBal;
     }
     else {
